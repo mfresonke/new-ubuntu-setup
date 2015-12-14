@@ -46,7 +46,7 @@ Commands/Scripts/Etc for setup of a new Ubuntu Machine
 - `export PATH=$PATH:$GOPATH/bin`
 - New zsh config includes these. All have to do is create go folder in $HOME.
 
-#### Obtain New(est) Version of Go [Details](https://github.com/niemeyer/godeb)
+#### Obtain New(est) Version of Go ([Details](https://github.com/niemeyer/godeb))
 - `go get gopkg.in/niemeyer/godeb.v1/cmd/godeb`
 - `godeb list`
 - (Find Version Desired)
