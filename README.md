@@ -30,6 +30,10 @@ Commands/Scripts/Etc for setup of a new Ubuntu Machine
 ## Ubuntu 
 ### System Preferences Tasks
 - Security & Privacy -> Search -> Uncheck Use Web
+- Software & Updates -> Updates -> 
+   - Check for Updates: Daily
+   - When there are Security Updates: Download and Install Automatically
+   - Other Updates: Every Two Weeks (I hate being annoyed by the gui updater)
 
 ## Application Preferences
 ### Terminal
@@ -54,3 +58,9 @@ Commands/Scripts/Etc for setup of a new Ubuntu Machine
 - Tell git who I am
 - `git config --global user.email "max@fresonke.com"`
 - `git config --global user.name "Max Fresonke"`
+
+### Atom
+- Install `go-plus` package.
+
+### Sublime
+- Install [Package Manager](https://packagecontrol.io/installation)
