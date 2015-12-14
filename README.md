@@ -1,9 +1,16 @@
 # new-ubuntu-setup
 Commands/Scripts/Etc for setup of a new Ubuntu Machine
 
-## Software Through Apt-Get
-- `sudo apt-get update && sudo apt-get install -y git golang build-essentials htop tmux vim gdebi python-software-properties`
+## Install Basic Software Through Apt-Get
+- `sudo apt-get update && sudo apt-get install -y git golang build-essentials htop tmux vim gdebi python-software-properties gparted zsh`
+
+## Setup `zsh`.
+- Instructions [here](https://github.com/mfresonke/max-prezto-config)
+
+
+## Upgrade Rest of System
 - `sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get autoremove && sudo update-grub`
+- Additionally, if desired, you can add on `&& sudo reboot`
 
 ## PPAs
 ### Git
@@ -18,14 +25,29 @@ Commands/Scripts/Etc for setup of a new Ubuntu Machine
 - [Atom](https://atom.io/)
 - [Sublime](http://www.sublimetext.com/3)
 
-# Preferences
+# Configuration
 
-## System Preferences Tasks
+## Ubuntu 
+### System Preferences Tasks
 - Security & Privacy -> Search -> Uncheck Use Web
 
 ## Application Preferences
 ### Terminal
 - Turn on infinite scrollback.
+
+### Go
+#### Configure $GOPATH and add progs to $PATH (hint: use .zshrc)
+- `mkdir $HOME/go`
+- `export GOPATH=$HOME/go`
+- `export PATH=$PATH:$GOPATH/bin`
+- New zsh config includes these. All have to do is create go folder in $HOME.
+#### Obtain New(est) Version of Go [Details](https://github.com/niemeyer/godeb)
+- `go get gopkg.in/niemeyer/godeb.v1/cmd/godeb`
+- `godeb list`
+- (Find Version Desired)
+- `godeb download <version>`
+- `sudo apt-get purge -y golang && sudo apt-get autoremove -y`
+- `sudo gdebi go-<version>.deb`
 
 ### Git
 - Tell git who I am
