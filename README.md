@@ -2,7 +2,7 @@
 Commands/Scripts/Etc for setup of a new Ubuntu Machine
 
 ## Install Basic Software Through Apt-Get
-- `sudo apt-get update && sudo apt-get install -y git golang build-essentials htop tmux vim gdebi python-software-properties gparted zsh`
+- `sudo apt-get update && sudo apt-get install -y git golang build-essential htop tmux vim gdebi python-software-properties gparted zsh`
 
 ## Setup [zsh](https://github.com/mfresonke/max-prezto-config)
 tl;dr:
