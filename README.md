@@ -21,7 +21,7 @@ done
 
 
 ## Upgrade Rest of System
-- `sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get autoremove && sudo update-grub`
+- `sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y && sudo update-grub`
 - Additionally, if desired, you can add on `&& sudo reboot`
 
 ## PPAs
