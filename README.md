@@ -1,6 +1,12 @@
 # new-ubuntu-setup
 Commands/Scripts/Etc for setup of a new Ubuntu Machine
 
+## Add PPAs
+### Git
+- `sudo apt-add-repository ppa:git-core/ppa && sudo apt-get update`
+### Oracle Java
+- `sudo add-apt-repository ppa:webupd8team/java && sudo apt-get update`
+
 ## Install Basic Software Through Apt-Get
 - `sudo apt-get update && sudo apt-get install -y git golang build-essential htop tmux vim gdebi python-software-properties gparted zsh`
 
@@ -24,12 +30,8 @@ done
 - `sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y && sudo update-grub`
 - Additionally, if desired, you can add on `&& sudo reboot`
 
-## PPAs
-### Git
-- `sudo apt-add-repository ppa:git-core/ppa && sudo apt-get update && sudo apt-get install git`
-
+## Install Optional Software
 ### Oracle Java
-- `sudo add-apt-repository ppa:webupd8team/java && sudo apt-get update`
 - Install latest Java (at this time `sudo apt-get install oracle-java8-installer`)
 
 ## Outside Software
