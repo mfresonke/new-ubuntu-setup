@@ -8,8 +8,11 @@ Commands/Scripts/Etc for setup of a new Ubuntu Machine
 ### Oracle Java
 - `sudo add-apt-repository ppa:webupd8team/java && sudo apt-get update`
 
-## Install Basic Software Through Apt-Get
-- `sudo apt-get update && sudo apt-get install -y git golang build-essential htop tmux vim gdebi python-software-properties gparted zsh`
+## Install Command Line Software Through Apt-Get
+- `sudo apt-get update && sudo apt-get install -y git golang build-essential htop tmux vim gdebi python-software-properties zsh`
+
+## Install GUI Software with Apt-Get
+` sudo apt-get update && sudo apt-get install gparted`
 
 ## Setup [zsh](https://github.com/mfresonke/max-prezto-config)
 tl;dr:
