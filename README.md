@@ -74,7 +74,7 @@ done
 
 ### Git
 - Tell git who I am
-- `git config --global user.email "max@fresonke.com"`
+- `git config --global user.email "m**@f******.com"`
 - `git config --global user.name "Max Fresonke"`
 
 ### Atom
