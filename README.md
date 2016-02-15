@@ -15,11 +15,11 @@ Commands/Scripts/Etc for setup of a new Ubuntu Machine
 
 ## Setup [zsh](https://github.com/mfresonke/max-prezto-config)
 tl;dr:
-- run `zsh`
-- `rm -Rf ~/.z*`
-- `git clone --recursive https://github.com/mfresonke/max-prezto-config.git "${ZDOTDIR:-$HOME}/.zprezto"`
-- Run Shell Script:
+- run `zsh` and press (2)
+- Blindly Run Commands:
 ```
+rm -Rf ~/.z*
+git clone --recursive https://github.com/mfresonke/max-prezto-config.git "${ZDOTDIR:-$HOME}/.zprezto"
 setopt EXTENDED_GLOB
 for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
   ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
