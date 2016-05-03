@@ -4,6 +4,7 @@ Commands/Scripts/Etc for setup of a new Ubuntu Machine
 ## Add PPAs
 ### Git
 - `sudo apt-add-repository ppa:git-core/ppa && sudo apt-get update`
+
 ### Oracle Java
 - `sudo add-apt-repository ppa:webupd8team/java && sudo apt-get update`
 
