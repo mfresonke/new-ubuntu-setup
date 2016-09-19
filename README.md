@@ -9,7 +9,7 @@ Commands/Scripts/Etc for setup of a new Ubuntu Machine
 - `sudo add-apt-repository ppa:webupd8team/java && sudo apt-get update`
 
 ## Install Command Line Software Through Apt-Get
-- `sudo apt update && sudo apt install -y git golang build-essential htop tmux vim gdebi-core python-software-properties zsh fish`
+- `sudo apt update && sudo apt install -y git golang build-essential htop tmux vim gdebi-core python-software-properties zsh xz pixz`
 
 ## Install GUI Software with Apt-Get
 ` sudo apt update && sudo apt install -y gparted gdebi`
