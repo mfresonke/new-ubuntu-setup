@@ -30,7 +30,7 @@ chsh -s /bin/zsh
 
 
 ## Upgrade Rest of System
-- `sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y && sudo update-grub`
+- `sudo apt update && sudo apt full-upgrade -y && sudo apt remove --auto-remove -y && sudo update-grub`
 - Additionally, if desired, you can add on `&& sudo reboot`
 
 ## Install Optional Software
