@@ -12,7 +12,7 @@ Commands/Scripts/Etc for setup of a new Ubuntu Machine
 - `sudo apt update && sudo apt install -y git golang build-essential htop tmux vim gdebi-core python-software-properties zsh xz-utils pixz checkinstall`
 
 ## Install GUI Software with Apt-Get
-` sudo apt update && sudo apt install -y gparted gdebi`
+` sudo apt update && sudo apt install -y gparted gdebi vlc`
 
 ## Setup [zsh](https://github.com/mfresonke/max-prezto-config)
 tl;dr:
