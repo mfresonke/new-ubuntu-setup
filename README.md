@@ -9,7 +9,7 @@ Commands/Scripts/Etc for setup of a new Ubuntu Machine
 - `sudo add-apt-repository ppa:webupd8team/java && sudo apt-get update`
 
 ## Install Command Line Software Through Apt-Get
-- `sudo apt update && sudo apt install -y git golang build-essential htop tmux vim gdebi-core python-software-properties zsh xz-utils pixz checkinstall`
+- `sudo apt update && sudo apt install -y git golang build-essential htop tmux vim gdebi-core python-software-properties zsh xz-utils pixz checkinstall`hddtemp lm-sensors
 
 ## Install GUI Software with Apt-Get
 ` sudo apt update && sudo apt install -y gparted gdebi vlc`
@@ -27,7 +27,8 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 chsh -s /bin/zsh
 ```
-
+## Setup CPU Sensors 
+`sudo service kmod start && sudo sensors-detect`
 
 ## Upgrade Rest of System
 - `sudo apt update && sudo apt full-upgrade -y && sudo apt remove --auto-remove -y && sudo update-grub`
