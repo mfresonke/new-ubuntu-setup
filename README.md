@@ -41,7 +41,7 @@ ln -s ~/.vim/vimrc ~/.vimrc
 ```
 ### Via HTTPS
 ```
-git clone https://github.com/mfresonke/vim.git
+git clone https://github.com/mfresonke/vim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
