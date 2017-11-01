@@ -35,12 +35,12 @@ chsh -s /bin/zsh
 Clone the repo and Symlink .vimrc
 
 ### Via SSH
-````
+```
 git clone git@github.com:mfresonke/vim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 ### Via HTTPS
-````
+```
 git clone https://github.com/mfresonke/vim.git
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
