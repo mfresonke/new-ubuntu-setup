@@ -29,6 +29,15 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 chsh -s /bin/zsh
 ```
+
+## Setup [vim](https://github.com/mfresonke/vim)
+
+Clone the repo
+`git clone git@github.com:mfresonke/vim.git ~/.vim`
+
+Symlink .vimrc
+`ln -s ~/.vim/vimrc ~/.vimrc`
+
 ## Setup CPU Sensors 
 `sudo service kmod start && sudo sensors-detect`
 
