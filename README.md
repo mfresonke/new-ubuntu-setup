@@ -32,11 +32,18 @@ chsh -s /bin/zsh
 
 ## Setup [vim](https://github.com/mfresonke/vim)
 
-Clone the repo
-`git clone git@github.com:mfresonke/vim.git ~/.vim`
+Clone the repo and Symlink .vimrc
 
-Symlink .vimrc
-`ln -s ~/.vim/vimrc ~/.vimrc`
+### Via SSH
+````
+git clone git@github.com:mfresonke/vim.git ~/.vim
+ln -s ~/.vim/vimrc ~/.vimrc
+```
+### Via HTTPS
+````
+git clone https://github.com/mfresonke/vim.git
+ln -s ~/.vim/vimrc ~/.vimrc
+```
 
 ## Setup CPU Sensors 
 `sudo service kmod start && sudo sensors-detect`
