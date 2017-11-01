@@ -9,7 +9,7 @@ Commands/Scripts/Etc for setup of a new Ubuntu Machine
 - `sudo add-apt-repository ppa:webupd8team/java && sudo apt-get update`
 
 ## Install Command Line Software Through Apt-Get
-- `sudo apt update && sudo apt install -y git build-essential htop tmux vim gdebi-core zsh xz-utils tree unzip`
+- `sudo apt update && sudo apt install -y git build-essential htop tmux vim gdebi-core zsh xz-utils tree zip unzip`
 
 ## Other Cool, But Less Necessary Cmd Line Software
 - `sudo apt install -y golang hddtemp lm-sensors checkinstall pixz`
