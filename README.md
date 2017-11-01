@@ -44,6 +44,7 @@ chsh -s /bin/zsh
 - [Google Chrome](https://www.google.com/chrome/browser/desktop/)
 - [Atom](https://atom.io/)
 - [Sublime](http://www.sublimetext.com/3)
+- [Docker] (https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
 
 # Configuration
 
