@@ -20,6 +20,17 @@ Commands/Scripts/Etc for setup of a new Ubuntu Machine
 tl;dr:
 - run `zsh` and press (2)
 - Blindly Run Commands:
+### Via SSH
+```
+rm -Rf ~/.z*
+git clone --recursive git@github.com:mfresonke/max-prezto-config.git "${ZDOTDIR:-$HOME}/.zprezto"
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+chsh -s /bin/zsh
+```
+### Via HTTPS
 ```
 rm -Rf ~/.z*
 git clone --recursive https://github.com/mfresonke/max-prezto-config.git "${ZDOTDIR:-$HOME}/.zprezto"
@@ -29,7 +40,6 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 chsh -s /bin/zsh
 ```
-
 ## Setup [vim](https://github.com/mfresonke/vim)
 
 Clone the repo and Symlink .vimrc
