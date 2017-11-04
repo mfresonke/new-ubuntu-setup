@@ -74,7 +74,9 @@ ln -s ~/.vim/vimrc ~/.vimrc
 
 # Configuration
 
-## Ubuntu 
+## Ubuntu Desktop
+### Disable Automount
+`gsettings set org.gnome.desktop.media-handling automount-open false`
 ### System Preferences Tasks
 - Security & Privacy -> Search -> Uncheck Use Web
 - Software & Updates -> Updates -> 
