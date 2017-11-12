@@ -71,6 +71,7 @@ ln -s ~/.vim/vimrc ~/.vimrc
 - [Atom](https://atom.io/)
 - [Sublime](http://www.sublimetext.com/3)
 - [Docker](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
+- [Skype](https://www.skype.com/en/get-skype/)
 
 # Configuration
 
