@@ -77,6 +77,10 @@ ln -s ~/.vim/vimrc ~/.vimrc
 ## Ubuntu Desktop
 ### Disable Automount
 `gsettings set org.gnome.desktop.media-handling automount-open false`
+
+## Set Swappiness For "Perceived Performance"
+`sudo bash -c "echo 'vm.swappiness = 10' >> /etc/sysctl.conf" && sudo sysctl -p`
+
 ### System Preferences Tasks
 - Security & Privacy -> Search -> Uncheck Use Web
 - Software & Updates -> Updates -> 
