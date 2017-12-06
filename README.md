@@ -118,3 +118,31 @@ ln -s ~/.vim/vimrc ~/.vimrc
 
 ### Sublime
 - Install [Package Manager](https://packagecontrol.io/installation)
+
+## Services
+
+### SAMBA
+```
+[global]
+workgroup = <whatever>
+server string = Awesome Server
+netbios name = awesome-server
+security = user
+map to guest = bad user
+dns proxy = no
+# Mac OS Options (Faster Browsing and TM Support)
+ea support = yes
+vfs objects = catia fruit streams_xattr
+fruit:resource = file
+fruit:metadata = netatalk
+fruit:locking = netatalk
+fruit:encoding = native
+
+[Some-Files]
+comment = Awesome heap of stuff.
+valid users = max
+force user = fresonke   #recommended if you have > 1 user
+browsable = yes         #needed to show up in windows "Network"
+read only = no          #needed if any writes are desired
+path = /srv/some-fs/share
+```
