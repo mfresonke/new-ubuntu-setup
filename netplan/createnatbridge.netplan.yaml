@@ -1,0 +1,16 @@
+network:
+  version: 2
+  ethernets:
+    eth0:
+      dhcp4: true
+      optional: true
+      # disables ipv6
+      link-local: []
+    switchports:
+      match:
+        name: enx*
+  bridges:
+    br0:
+      interfaces: [switchports]
+      addresses: [192.168.2.1/24]
+      link-local: []
