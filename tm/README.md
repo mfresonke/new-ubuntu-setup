@@ -1,6 +1,8 @@
 # Setup
 
 ```sh
+# wsdd is the discovery feature for windows
+sudo apt install samba avahi-daemon wsdd
 sudo smbpasswd -a max
 ```
 
