@@ -55,23 +55,16 @@ git clone https://github.com/mfresonke/vim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
-## Setup CPU Sensors 
-`sudo service kmod start && sudo sensors-detect`
-
 ## Upgrade Rest of System
-- `sudo apt update && sudo apt full-upgrade -y && sudo apt remove --auto-remove -y && sudo update-grub`
+- `sudo apt update && sudo apt full-upgrade -y && sudo apt remove --auto-remove -y`
 - Additionally, if desired, you can add on `&& sudo reboot`
 
 ## Install Optional Software
-### Oracle Java
-- Install latest Java (at this time `sudo apt-get install oracle-java8-installer`)
 
 ## Outside Software
 - [Google Chrome](https://www.google.com/chrome/browser/desktop/)
-- [Atom](https://atom.io/)
-- [Sublime](http://www.sublimetext.com/3)
 - [Docker](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
-- [Skype](https://www.skype.com/en/get-skype/)
+- [VS Code](https://code.visualstudio.com/docs/setup/linux)
 
 # Configuration
 
@@ -110,39 +103,12 @@ ln -s ~/.vim/vimrc ~/.vimrc
 
 ### Git
 - Tell git who I am
-- `git config --global user.email "m**@f******.com"`
+- `git config --global user.email "m@f"`
 - `git config --global user.name "Max Fresonke"`
 
-### Atom
-- Install `go-plus` package.
+### Misc
 
-### Sublime
-- Install [Package Manager](https://packagecontrol.io/installation)
-
-## Services
-
-### SAMBA
-```
-[global]
-workgroup = <whatever>
-server string = Awesome Server
-netbios name = awesome-server
-security = user
-map to guest = bad user
-dns proxy = no
-# Mac OS Options (Faster Browsing and TM Support)
-ea support = yes
-vfs objects = catia fruit streams_xattr
-fruit:resource = file
-fruit:metadata = netatalk
-fruit:locking = netatalk
-fruit:encoding = native
-
-[Some-Files]
-comment = Awesome heap of stuff.
-valid users = max
-force user = fresonke   #recommended if you have > 1 user
-browsable = yes         #needed to show up in windows "Network"
-read only = no          #needed if any writes are desired
-path = /srv/some-fs/share
+#### Nmap to Find SSH Hosts
+```sh
+sudo nmap -sS --open -p 22 192.168.1.0/24
 ```
