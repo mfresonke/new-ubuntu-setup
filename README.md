@@ -4,11 +4,11 @@ Commands/Scripts/Etc for setup of a new Ubuntu Machine
 
 ## Install Command Line Software Through Apt-Get
 
--   `sudo apt update && sudo apt install -y git build-essential htop tmux vim gdebi-core zsh xz-utils tree zip unzip pv`
+-   `sudo apt update && sudo apt install -y git build-essential htop tmux vim gdebi-core zsh xz-utils tree zip unzip pv nmon`
 
 ## Other Cool, But Less Necessary Cmd Line Software
 
--   `sudo apt install -y mosh golang hddtemp lm-sensors checkinstall pixz`
+-   `sudo apt install -y mosh golang hddtemp lm-sensors checkinstall pixz gnome-system-monitor`
 
 ## Install GUI Software with Apt-Get
 
