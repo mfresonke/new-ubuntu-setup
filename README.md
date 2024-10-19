@@ -8,11 +8,11 @@ Commands/Scripts/Etc for setup of a new Ubuntu Machine
 
 ## Other Cool, But Less Necessary Cmd Line Software
 
--   `sudo apt install -y mosh golang hddtemp lm-sensors checkinstall pixz gnome-system-monitor`
+-   `sudo apt install -y mosh golang hddtemp lm-sensors checkinstall pixz`
 
 ## Install GUI Software with Apt-Get
 
-` sudo apt update && sudo apt install -y gparted gdebi vlc steam-installer`
+` sudo apt update && sudo apt install -y gparted gdebi vlc steam-installer gnome-system-monitor`
 
 ## Setup [zsh](https://github.com/mfresonke/max-prezto-config)
 
